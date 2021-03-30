@@ -54,7 +54,7 @@ $ cmake ../ && make
 <br><br>
 -->
 
-## 2. Install
+## 1. Install
 + installing champ (controller for quad-legs robot)
 ```
 $ sudo apt install -y python-rosdep
@@ -74,11 +74,11 @@ $ ./install_deescriptions
 ```
 
 
-## 3. Models
+## 2. Models
 #### ● Actually, I used anymal_b_config model only.
 <br><br>
 
-## 4. Run
+## 3. Run
 ```
 $ roslaunch 
 ```
