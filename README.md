@@ -53,33 +53,29 @@ $ cmake ../ && make
 ## 2. Install
 + installing champ (controller for quad-legs robot)
 ```
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/chvmp/champ.git
-$ cd ../ && catkin build -DCMAKE_BUILDTYPE=Release -j8
-$ source ~/catkin_ws/devel/setup.bash
+$ sudo apt install -y python-rosdep
+$ cd <your_ws>/src
+$ git clone --recursive https://github.com/chvmp/champ
+$ git clone https://github.com/chvmp/champ_teleop
+$ cd ..
+$ rosdep install --from-paths src --ignore-src -r -y
 ```
 
-+ installing robots (various robot models)
++ installing robot models
 ```
-$ cd ~/catkin_ws/src
+$ cd ~/<your_ws>/src/champ
 $ git clone https://github.com/chvmp/robots.git
-$ cd ../ && catkin build -DCMAKE_BUILDTYPE=Release -j8
-$ source ~/catkin_ws/devel/setup.bash
+$ cd /robots
+$ ./install_deescriptions
 ```
 
 
 ## 3. Models
-#### ● Actually, no installation difference among TX2, Xavier, and NX
+#### ● Actually, I used anymal_b_config model only.
 <br><br>
 
 ## 4. Run
-#### ● Uploaded folders for following setup: D435i, pixhawk4 mini 
-#### ● for using your own sensor setup, you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)
 ```
-$ roslaunch realsense2_camera rs_camera.launch
-$ roslaunch mavros px4.launch
-$ rosrun vins vins_node [path of realsense_stereo_imu_config.yaml]
-$ rosrun loop_fusion loop_fusion_node [path of realsense_stereo_imu_config.yaml]
-$ roslaunch vins vins_rviz.launch
+$ roslaunch 
 ```
 
