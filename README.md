@@ -5,20 +5,23 @@
 <br>
 
 # Index
+<!--
 ### 1. Prerequisites
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● LCM
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Boost
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● CMake
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● unitree_legged_sdk
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● aliengo_sdk
-### 2. Install
-### 3. Models
+-->
+### 1. Install
+### 2. Models
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● I used [robot_name]
-### 4. Run
+### 3. Run
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Uploaded folders for following setup: D435i, pixhawk4 mini 
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● for using your own sensor setup, you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)
 <br><br>
 
+<!--
 ## 1. Prerequisites
 ### ● LCM (>= 1.4.0)
 ```
@@ -49,6 +52,7 @@ $ cd aliengo_sdk && mkdir build && cd build
 $ cmake ../ && make
 ```
 <br><br>
+-->
 
 ## 2. Install
 + installing champ (controller for quad-legs robot)
