@@ -71,6 +71,7 @@ $ cd && $ git clone https://github.com/chvmp/robots.git
 $ cd robots && ./install_deescriptions
 $ mv robots/configs/<your_model>_config <your_ws>/src/champ/
 $ mv robots/descriptions/<your_model>_description <your_ws>/src/champ/
+$ cd <your_ws> && catkin_build -j8
 ```
 
 
