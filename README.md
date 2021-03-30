@@ -14,7 +14,7 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● aliengo_sdk
 -->
 ### 1. Install
-### 2. Models
+### 2. Applying Model
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● I used [robot_name]
 ### 3. Run
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● Uploaded folders for following setup: D435i, pixhawk4 mini 
@@ -67,19 +67,20 @@ $ rosdep install --from-paths src --ignore-src -r -y
 
 + installing robot models
 ```
-$ cd ~/<your_ws>/src/champ
-$ git clone https://github.com/chvmp/robots.git
-$ cd /robots
-$ ./install_deescriptions
+$ cd && $ git clone https://github.com/chvmp/robots.git
+$ cd robots && ./install_deescriptions
+$ mv robots/configs/<your_model>_config <your_ws>/src/champ/
+$ mv robots/descriptions/<your_model>_description <your_ws>/src/champ/
 ```
 
 
-## 2. Models
+## 2. Applying Model
 #### ● Actually, I used anymal_b_config model only.
 <br><br>
 
 ## 3. Run
 ```
-$ roslaunch 
+$ roslaunch champ_config gazebo.launch 
+$ roslaunch champ_config slam.launch rviz:=true
 ```
 
