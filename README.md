@@ -81,7 +81,7 @@ $ cd <your_ws> && catkin_build -j8
 
 ## 3. Run
 ```
-$ roslaunch champ_config gazebo.launch 
-$ roslaunch champ_config slam.launch rviz:=true
+$ roslaunch anymal_b_config gazebo.launch 
+$ roslaunch anymal_b_config slam.launch rviz:=true
 ```
 
