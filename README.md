@@ -81,8 +81,17 @@ $ cd <your_ws> && catkin_build -j8
 
 ## 3. Run
 + please refer my [gazebo.launch]()
++ following topic is used: '/cmd_vel', which is a velocity of robot body
 ```
 $ roslaunch anymal_b_config gazebo.launch # load anymal_b robot model and world
-$ roslaunch anymal_b_config slam.launch rviz:=true
+# use below format
+$ rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+  x: 0.0
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 0.0"
 ```
 
