@@ -1,5 +1,5 @@
 ***
-# Quad-Leggs Simulation setting
+# Quad-Legged Simulation setting
 
 ***
 <br>
