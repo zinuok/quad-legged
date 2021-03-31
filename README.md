@@ -80,7 +80,7 @@ $ cd <your_ws> && catkin_build -j8
 <br><br>
 
 ## 3. Run
-+ please refer my [gazebo.launch]()
++ please refer my [gazebo.launch](https://github.com/zinuok/quadlegs/blob/main/gazebo.launch)
 + following topic is used: '/cmd_vel', which is a velocity of robot body
 ```
 $ roslaunch anymal_b_config gazebo.launch # load anymal_b robot model and world
