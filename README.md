@@ -15,7 +15,7 @@
 -->
 ### 1. Install
 ### 2. Applying Model
-####    &nbsp;&nbsp;&nbsp;&nbsp;● I used [robot_name]
+####    &nbsp;&nbsp;&nbsp;&nbsp;● I used [anymal_b]
 ### 3. Run
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● tele-operation using ROS topic publisher 
 <br><br>
