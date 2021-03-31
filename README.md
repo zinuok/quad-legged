@@ -17,9 +17,9 @@
 ### 2. Applying Model
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● I used [robot_name]
 ### 3. Run
-####    &nbsp;&nbsp;&nbsp;&nbsp;● Uploaded folders for following setup: D435i, pixhawk4 mini 
-####    &nbsp;&nbsp;&nbsp;&nbsp;● for using your own sensor setup, you have to get a calibration data using [kalibr](https://github.com/zinuok/kalibr)
+####    &nbsp;&nbsp;&nbsp;&nbsp;● tele-operation using ROS topic publisher 
 <br><br>
++ **reference github link**: [champ](https://github.com/chvmp/champ)
 
 <!--
 ## 1. Prerequisites
@@ -80,8 +80,9 @@ $ cd <your_ws> && catkin_build -j8
 <br><br>
 
 ## 3. Run
++ please refer my [gazebo.launch]()
 ```
-$ roslaunch anymal_b_config gazebo.launch 
+$ roslaunch anymal_b_config gazebo.launch # load anymal_b robot model and world
 $ roslaunch anymal_b_config slam.launch rviz:=true
 ```
 
