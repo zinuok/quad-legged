@@ -20,7 +20,7 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● tele-operation using ROS topic publisher 
 <br><br>
 + **reference github link**: [champ](https://github.com/chvmp/champ)
-
+[test](https://docs.google.com/presentation/d/16cijDamfaXLU3SacM_xeFynKATdggioXGDD2eX2lx5k/edit?usp=sharing)
 <!--
 ## 1. Prerequisites
 ### ● LCM (>= 1.4.0)
