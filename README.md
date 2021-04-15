@@ -86,7 +86,7 @@ $ cd <your_ws> && catkin_build -j8
 $ roslaunch anymal_b_config gazebo.launch # load anymal_b robot model and world
 # use below format
 $ rostopic pub /cmd_vel geometry_msgs/Twist "linear:
-  x: 0.0
+  x: 5.0
   y: 0.0
   z: 0.0
 angular:
