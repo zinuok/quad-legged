@@ -78,7 +78,7 @@ $ cd <your_ws> && catkin_build -j8
 
 ## 2. Applying Model
 #### ● Actually, I used anymal_b_config model only.
-#### ● following urdf is used: [anymal_b_robot + Velodyne LiDAR + gazebo ](anymal_b_base/config/urdf/anymal_lidar_imu.urdf)
+#### ● following urdf is used: [anymal_b_robot + Velodyne LiDAR + gazebo IMU](anymal_b_base/config/urdf/anymal_lidar_imu.urdf)
 <br><br>
 
 ## 3. Run
