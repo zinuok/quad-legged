@@ -2,7 +2,7 @@
 # Quad-Legged Simulation setting
 ***
 + **reference github link**: [champ](https://github.com/chvmp/champ)
-+ This is my edited version for using Velodyne LiDAR & gazebo IMU with original model. Original copyright is  
++ This is my edited version for using Velodyne LiDAR & gazebo IMU with original model. Original copyright is owned by above [authors](https://github.com/chvmp/champ).
 <br>
 
 # Index
