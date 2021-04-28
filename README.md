@@ -56,16 +56,18 @@ $ cmake ../ && make
 -->
 
 ## 1. Install
-+ installing champ (controller for quad-legs robot)
++ installing champ-anymal_b_config model (controller for quad-legs robot)
 ```
 $ sudo apt install -y python-rosdep
 $ cd <your_ws>/src
-$ git clone --recursive https://github.com/chvmp/champ
+$ git clone https://github.com/zinuok/quad-legged.git
 $ git clone https://github.com/chvmp/champ_teleop
 $ cd ..
 $ rosdep install --from-paths src --ignore-src -r -y
+$ catkin build -j $(nproc) && source ./devel/setup.bash
 ```
 
+<!--
 + installing robot models
 ```
 $ cd && $ git clone https://github.com/chvmp/robots.git
@@ -74,7 +76,7 @@ $ mv robots/configs/<your_model>_config <your_ws>/src/champ/
 $ mv robots/descriptions/<your_model>_description <your_ws>/src/champ/
 $ cd <your_ws> && catkin_build -j8
 ```
-
+-->
 
 ## 2. Applying Model
 #### ● Actually, I used anymal_b_config model only.
