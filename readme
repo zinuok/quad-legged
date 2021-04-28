@@ -1,0 +1,29 @@
+< folder description >
+- anymal_b_base: basic definitions for others (e.g., model URDF, rviz settings)
+- anymal_b_config: you will use mainly. Kinematic/joint configurations with launch files to load the robot model with gazebo.
+
+- champ: basic definitions and libraries for 'anymal_b_base'.
+- champ_gazebo: for load gazebo with robot model.
+- champ_msgs: ROS messages are defined.
+
+
+< process flow > 
+(this is for roslaunch anymal_b_config gazebo.launch)
+    * load ros control info for anymal_b *
+	1) anymal_b_config/config/ros_control/ros_control.yaml
+
+	2) anymal_b_config/launch/bringup.launch
+        * load kinematic info of anymal b *
+		2-1) anymal_b_config/config/joints/joints.yaml & links.yaml
+				 anymal_b_config/config/links/links.yaml
+				 anymal_b_config/config/gait/gait.yaml
+				 anymal_b_base/urdf/anymal.urdf
+
+        * actual bring up of anymal_b model with hardware/controller/other essential package *
+		2-2) anymal_b_config/launch/bringup_body.launch
+			* HARDWARE *  
+			- anymal_b_config/launch/include/laser/$(arg laser).launch
+			* CONTROLLER *
+			- anymal_b_base/launch/velocity_smoother.launch
+			- < pkg - node >
+				- anymal_b_base  --  state_estimator 
