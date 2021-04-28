@@ -1,7 +1,8 @@
 ***
 # Quad-Legged Simulation setting
-
 ***
++ **reference github link**: [champ](https://github.com/chvmp/champ)
++ This is my edited version for using Velodyne LiDAR & gazebo IMU with original model. Original copyright is  
 <br>
 
 # Index
@@ -19,8 +20,7 @@
 ### 3. Run
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● tele-operation using ROS topic publisher 
 <br><br>
-+ **reference github link**: [champ](https://github.com/chvmp/champ)
-+ This is my edited version for using Velodyne LiDAR & gazebo IMU with original model. Original copyright is  
+
 
 <!--
 ## 1. Prerequisites
