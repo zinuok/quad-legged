@@ -61,7 +61,6 @@ $ cmake ../ && make
 $ sudo apt install -y python-rosdep
 $ cd <your_ws>/src
 $ git clone https://github.com/zinuok/quad-legged.git
-$ git clone https://github.com/chvmp/champ_teleop
 $ cd ..
 $ rosdep install --from-paths src --ignore-src -r -y
 $ catkin build -j $(nproc) && source ./devel/setup.bash
