@@ -20,7 +20,7 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● tele-operation using ROS topic publisher 
 <br><br>
 + **reference github link**: [champ](https://github.com/chvmp/champ)
-+ **my editied version**: [anymal_b](https://drive.google.com/drive/folders/11nySEjjSm7MpKuuOReOjIEwBADCTAIYq?usp=sharing)
++ This is my edited version for using Velodyne LiDAR & gazebo IMU with original model. Original copyright is  
 
 <!--
 ## 1. Prerequisites
