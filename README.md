@@ -84,6 +84,12 @@ $ cd <your_ws> && catkin_build -j8
 
 ## 3. Run
 + please refer my [gazebo.launch](https://github.com/zinuok/quadlegs/blob/main/gazebo.launch)
++ in order to user [quad.world](https://github.com/zinuok/quad-legged/blob/main/champ_gazebo/worlds/quadruped/quad.world) in above launch,
+```
+$ gedit ~/.bashrc
+add follow line:
+export GAZEBO_MODEL_PATH=:<your_path_to_quadruped_dir>/quadruped:$GAZEBO_MODEL_PATH
+```
 + following topic is used: '/cmd_vel', which is a velocity of robot body
 ```
 $ roslaunch anymal_b_config gazebo.launch # load anymal_b robot model and world
