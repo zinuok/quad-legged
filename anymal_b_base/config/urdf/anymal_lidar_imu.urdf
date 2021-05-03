@@ -110,9 +110,12 @@
    <!-- Dummy inertia link, because KDL cannot have inertia on the base link -->
    <link name="base_inertia">
       <inertial>
-         <origin rpy="0 0 0" xyz="-0.001960558279 -0.001413217745 0.050207125344" />
-         <mass value="16.793507758" />
-         <inertia ixx="0.217391101503" ixy="-0.00132873239126" ixz="-0.00228200226173" iyy="0.639432546734" iyz="-0.00138078263145" izz="0.62414077654" />
+         <!-- <origin rpy="0 0 0" xyz="-0.001960558279 -0.001413217745 0.005207125344" /> -->
+         <!-- <mass value="16.793507758" /> -->
+         <!-- <inertia ixx="0.217391101503" ixy="-0.00132873239126" ixz="-0.00228200226173" iyy="0.639432546734" iyz="-0.00138078263145" izz="0.62414077654" /> -->
+         <origin rpy="0 0 0" xyz="-0.001960558279 -0.001413217745 -2.0207125344" />
+         <mass value="5.0" />
+         <inertia ixx="0.217391101503" ixy="-0.00132873239126" ixz="-0.00228200226173" iyy="0.639432546734" iyz="0" izz="0.62414077654" />
       </inertial>
    </link>
    <link name="LF_HIP">
@@ -270,10 +273,16 @@
    </link>
    <!-- Gazebo customization -->
    <gazebo reference="LF_FOOT">
+      <mu1>10.0</mu1>
+      <mu2>10.0</mu2>
       <kp>1000000.0</kp>
+      <kd>1000.0</kd>
+      <minDepth>0.01</minDepth>
+      <maxVel>1.0</maxVel>
+      <!-- <kp>1000000.0</kp>
       <kd>100.0</kd>
       <mu1>0.8</mu1>
-      <mu2>0.8</mu2>
+      <mu2>0.8</mu2> -->
    </gazebo>
    <link name="RF_HIP">
       <visual>
@@ -430,10 +439,16 @@
    </link>
    <!-- Gazebo customization -->
    <gazebo reference="RF_FOOT">
+      <mu1>10.0</mu1>
+      <mu2>10.0</mu2>
       <kp>1000000.0</kp>
+      <kd>1000.0</kd>
+      <minDepth>0.01</minDepth>
+      <maxVel>1.0</maxVel>
+      <!-- <kp>1000000.0</kp>
       <kd>100.0</kd>
       <mu1>0.8</mu1>
-      <mu2>0.8</mu2>
+      <mu2>0.8</mu2> -->
    </gazebo>
    <link name="LH_HIP">
       <visual>
@@ -590,10 +605,16 @@
    </link>
    <!-- Gazebo customization -->
    <gazebo reference="LH_FOOT">
+      <mu1>10.0</mu1>
+      <mu2>10.0</mu2>
       <kp>1000000.0</kp>
+      <kd>1000.0</kd>
+      <minDepth>0.01</minDepth>
+      <maxVel>1.0</maxVel>
+      <!-- <kp>1000000.0</kp>
       <kd>100.0</kd>
       <mu1>0.8</mu1>
-      <mu2>0.8</mu2>
+      <mu2>0.8</mu2> -->
    </gazebo>
    <link name="RH_HIP">
       <visual>
@@ -750,10 +771,16 @@
    </link>
    <!-- Gazebo customization -->
    <gazebo reference="RH_FOOT">
+      <mu1>10.0</mu1>
+      <mu2>10.0</mu2>
       <kp>1000000.0</kp>
+      <kd>1000.0</kd>
+      <minDepth>0.01</minDepth>
+      <maxVel>1.0</maxVel>
+      <!-- <kp>1000000.0</kp>
       <kd>100.0</kd>
       <mu1>0.8</mu1>
-      <mu2>0.8</mu2>
+      <mu2>0.8</mu2> -->
    </gazebo>
    <transmission name="LF_HAA_trans">
       <type>transmission_interface/SimpleTransmission</type>
