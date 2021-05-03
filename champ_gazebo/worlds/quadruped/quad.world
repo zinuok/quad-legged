@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <gui>
+      <camera name="user_camera">
+        <pose>-28 0 33 0 0.89 0</pose>
+      </camera>
+    </gui>
+    <scene>
+      <sky>
+        <clouds>
+          <speed>3</speed>
+        </clouds>
+      </sky>
+      <ambient>0.75 0.75 0.75 1</ambient>
+      <background>0.5 0.5 0.5 1</background>
+      <shadows>1</shadows>
+    </scene>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun_2</uri>
+    </include>
+
+    <include>
+      <uri>model://quad_map</uri>
+    </include>
+
+  </world>
+</sdf>
