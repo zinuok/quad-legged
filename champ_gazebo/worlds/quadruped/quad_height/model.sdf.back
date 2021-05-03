@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='quad_height'>
+
+    <static>true</static>
+    <link name="bg_link">
+      <collision name="collision">
+        <geometry>
+          <heightmap>
+            <uri>model://quad_height/materials/textures/height.png</uri>
+            <size>320 320 20</size>
+            <pos>0 0 0</pos>
+          </heightmap>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <heightmap>
+            <texture>
+              <diffuse>file://media/materials/textures/grass_diffusespecular.png</diffuse>
+              <normal>file://media/materials/textures/flat_normal.png</normal>
+              <size>50</size>
+            </texture>
+            <texture>
+              <diffuse>model://quad_height/materials/textures/new_grass_dry.png</diffuse>
+              <normal>file://media/materials/textures/flat_normal.png</normal>
+              <size>50</size>
+            </texture>
+            <texture>
+              <diffuse>file://media/materials/textures/fungus_diffusespecular.png</diffuse>
+              <normal>file://media/materials/textures/flat_normal.png</normal>
+              <size>50</size>
+            </texture>
+            <blend>
+              <min_height>10</min_height>
+              <fade_dist>2</fade_dist>
+            </blend>
+            <blend>
+              <min_height>20</min_height>
+              <fade_dist>2</fade_dist>
+            </blend>
+            <uri>model://quad_height/materials/textures/height.png</uri>
+            <size>320 320 20</size>
+            <pos>0 0 0</pos>
+          </heightmap>
+        </geometry>
+      </visual>
+    </link>
+
+  </model>
+</sdf>
